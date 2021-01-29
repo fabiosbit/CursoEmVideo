@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro Programa</title>
+    <style>
+        body {
+            background-color: rgb(162, 162, 240);
+            color: white;
+            font: normal 20pt Arial;
+        }
+        h1 {
+            color:rgb(101, 129, 0);
+        }
+        p {
+            color: rgb(135, 160, 79);
+        }
+    </style>
+</head>
+<body>
+    <h1>Título: Olá, Mundo</h1>
+    <p>Parágrafo 1</p>
+    <script>
+        // window.confirm("Confirmar?")
+        var nome = window.prompt('Diga o seu nome.')
+        var idade = Number.parseInt(window.prompt('Diga sua idade.'))
+        var altura = Number.parseFloat(window.prompt('Digite sua altura.'))
+        var cpf = String(window.prompt('Digite seu CPF.'))
+        var salário = '2145,50'
+        window.alert('Seja bem vindo ' + nome)
+        window.alert(`Seja bem vindo ${nome}, de idade ${idade}, altura ${altura} e cpf ${cpf}`)
+        alert(salário.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}))
+        
+
+    </script>
+</body>
+</html>

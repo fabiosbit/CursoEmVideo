@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias</title>
+</head>
+<body>
+    <h1>Trabalhando com arquivos de Mídia</h1>
+    <p>Abra esta página em diferentes dispositivos ou redimensione o navegador para ver a imagem se adequar.</p>
+
+    <picture>
+        <!--A ordem dos tamanhos deve ser crescente, se não não funciona-->
+        <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png"> <!-- deixar uma folga no max-widht para não aparecer a barra de rolagem-->
+        <img src="imagens/foto-g.png" alt="Imagem Flexível">
+    </picture>
+
+    <h2>Reproduzindo Áudio localmente</h2>
+    <p>Código áudio player mais simpples em HTML5:</p>
+    <audio src="audio/musica.mp3" controls></audio>
+    <p>Código áudio player mais completo em HTML5:</p>
+    <audio preload="metadata" controls loop>
+        <!--o navegador vai tentar o primeiro source, se não conseguir vai para os próximos na sequencia-->
+        <source src="audio/musica.mp3" type="audio/mpeg">
+        <source src="audio/musica.ogg" type="audio/ogg">
+        <source src="audio/musica.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="audio/musica.mp3"> Clique aqui para baixar a música.</a></p>
+    </audio>
+
+    <h2>Reproduzindo Vídeo localmente</h2>
+    <p>Vídeos funcionam exatamente do mesmo modo que áudio, pode ser o código simples ou completo, com alternativas de formatos para compatibilidade com outros navegadores.</p>
+    <video src="videos/video1080.mp4" controls width="850"></video>
+
+    <h2>Reproduzindo Vídeo do Youtube</h2>
+    <iframe width="850" height="478" src="https://www.youtube.com/embed/3hng-hmSv2Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+    <h2>Reproduzindo Vídeo do Vimeo</h2>
+    <p>Vimeo é uma boa para conteúdo restrito pago ou com melhor qualidade de vídeo, mas é mais pesado que o youtube.</p>
+    <iframe src="https://player.vimeo.com/video/360228399?title=0&byline=0&portrait=0" width="850" height="478" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+    <p><a href="index.html" target="_self" rel="prev">Voltar para página inicial.</a></p>
+</body>
+</html>

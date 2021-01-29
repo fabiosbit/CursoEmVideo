@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos HTML</title>
+</head>
+<body>
+    <h1>Exemplos de Formatações e Hierarquia em HTML5:</h1>
+    <p>Aqui, neste parágrafo (p) está o título principal da página, ou de maior Hierarquia (h1)</p>
+    <p>Os parágrafos podem estar dentro ou fora dos headers, influenciando no tamanho do texto.</p>
+
+
+    <h2>Introdução: </h2>
+    <p>Aqui está o subtítulo, que seria nosso (h2)</p>
+    <p>Sobre Semântica, tudo que for semântico deve ser feito via HTML, ou seja, tudo o que tiver algum sentido e que não seja apenas estético
+        para formatações estéticas, utilize sempre o código CSS.
+    </p>
+    
+    <h3>Título dos Parágrafos
+    <p>Aqui temos o nivel 3, podendo ser o título do parágrafo, nosso (h3)</p>
+    </h3>
+
+    <h4>Depois podemos ir descendo o nível hierarquico até o nivel 6, ou seja, nosso limite é o (h6).
+    <p>Parágrafo no nivel 4.</p>
+    </h4>
+    
+    <h5>Aqui está o nível 5.
+    <p>Parágrafo do nível 5</p>
+    </h5>
+
+    <h6>E aqui está o nível 6 e útilmo.
+    <p>E, finalmente, o parágrafo do nível 6.</p>
+    </h6>
+    
+
+    <h2>Principais Formatações:</h2>
+    <h3>Negrito / Destaque</h3>
+    <p>Nesta frase temos um <b>termo em negrito</b> usando a tag B (não semântica).</p>
+    <p>Nesta frase tenho um <strong>termo em destaque</strong> usando a tab STRONG (semântica)</p>
+    
+    <h2>Itálico / Ênfase</h2>
+    <p>Nesta frase temos um <i>termo em itálico</i> usando a tag I (não semântica)</p>
+    <p>Nesta frase temos um <em>termo em ênfase</em> usando a tag EM (semântica)</p>
+
+    <h2>Texto Marcado:</h2>
+    <p>Podemos criar um <mark>texto marcado</mark> usando a tag MARK</p>
+    <p>E no outro parágrafo temos <mark style="background-color: cornflowerblue;">outro texto marcado</mark> em outra cor, utilizando STYLE.</p>
+
+    <h2>Texto Grande e Pequeno:</h2>
+    <p>Texto grande a tab BIG não deve ser utilizado, para texto grande use o CSS</p>
+    <p><small>Para texto pequeno</small> pode utilizar a tab SMALL para quando se referir às letras miúdas de um contrato por exemplo.</p>
+
+    <h2>Texto Deletado e Inserido:</h2>
+    <p>Nesta frase temos uma <del>parte do texto</del> que foi riscada e deve ser ignorada, usando a tag DEL.</p>
+    <p>Nesta frase temos um <ins>texto que foi inserido</ins>, ficando sublinhado usando a tab INS</p>
+    <p>Existe tambem a tab U para <u>texto sublinhado</u>, mas é (não semântica)</p>
+
+    <h2>Texto sobrescrito ou subscrito:</h2>
+    <p>Para coisas do tipo x<sup>20</sup>+10, use a tag SUP.</p>
+    <p>E para coisas do tipo H<sub>2</sub>O, use a tag SUB.</p>
+
+    <h2>Trabalhando com Listas</h2>
+    <h2>Listas Ordenadas:</h2>
+    <ol type="i">
+        <li>Acordar</li>
+        <li>Tomar Café</li>
+        <li>Escovar os dentes</li>
+        <li>Ir para o trabalho</li>
+        <li>Almoçar</li>
+        <li>Voltar pra casa</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+    </ol>
+    
+    <h2>Listas não ordenadas:</h2>
+    <ul type="square">
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Tomate</li>
+        <li>Alface</li>
+        <li>Requeijão</li>
+        <li>Arroz</li>
+        <li>Feijão</li>
+    </ul>
+    
+    <h2>Juntanto Listas:</h2>
+    <ol>
+        <li>Linguagens Antigas</li>
+        <ol type="a">
+            <li>Clipper</li>
+            <li>Visual Basic</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+        </ol>
+        <li>Linguagens Novas</li>
+        <ol type="a" start="5">
+            <li>PHP</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+        </ol>
+    </ol>
+
+    <h2>Lista de Definições</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para criação de conteúdo de um site.</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para criação de design de um site.</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
+    </dl>
+
+    <h2>Formatações de código fonte e Pré formatação</h2>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em JavaScript.
+    A tag (code) deixa a fonte monoespaçada.</p>
+    <p>Abaixo temos um código utilizando a tag (code) mais a tag (pre), que leva a formação do código para o texto:</p>
+    <pre>
+        <code>
+        num = int(input('Digite um numero'))
+        if num % 2 == 0:
+            print(f'O número {num} é PAR')
+        else:
+            print(f'O número {num} é IMPAR')
+        </code>
+    </pre>
+
+    <h2>Citação simples</h2>
+    <p>Citação com a tag (q): Como diria o pai de um amigo: <q>o computador é um burro muito rápido.</q></p>
+
+    <h2>Citação completa</h2>
+    <p>Usando a tag (blockquote) para incluir a fonte no código fonte e sua descrição.</p>
+    <p>Segundo Fulano, no seu livro HTML para leigos: <blockquote cite="URL.da.pagina">Texto que foi copiado do autor</blockquote></p>
+
+    <h2>Abreviações</h2>
+    <p>Usando a tag (abbr) para criar abreviações.</p>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>.</p>
+
+    <h2>Texto invertido</h2>
+    <p>Usando a tag (bdo) para inverter ou espelhar o texto:</p>
+    <p><bdo dir="rtl">Este texto está escrito de trás para frente.</bdo></p>
+
+    <H2>Usando links externos</H2>
+    <p>Criando link usando a tag (a) junto com a opção (target e external) para abrir em uma nova aba:</p>
+    <p>Você pode acessar meus códigos entrando no meu <a href="https://fabiosbit.github.com" target="_blank" rel="external">repositório público no GitHub.</a> </p>
+    <p>Ou use apenas a tag (a) para contunar na mesma aba: <a href="https://fabiosbit.github.com">repositório público no GitHub.</a></p>
+
+    <h2>Usando link interno</h2>
+    <p>Esta é a primeira página do site, você também pode ir para a <a href="pag02.html" rel="next">segunda página.</a></p>
+    <p>Naveganto entre pastas, clique para ir para a <a href="pasta/pag03.html">terceira página</a>, seu html está dentro de uma pasta.</p>
+
+    <h2>Links para downloads</h2>
+    <p>Para baixar arquivos basta referenciar o link para o arquivo e usar o parâmetro (download) e (type).</p>
+    <p>Para consultar todos os (types) acesse <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank" rel="external">iana.org</a></p>
+    <ul>
+        <li><a href="manuais/ManualSigna.pdf" download="ManualSigna.pdf" type="application/pdf">Manual Signa (pdf)</a></li>
+        <li><a href="manuais/Spotware.zip" download="Spotware.zip" type="application/zip">Manual Spotware (zip)</a></li>
+        <li><a href="manuais/ManualSigna.pdf">Manual Signa (abrir em vez de baixar)</a></li>
+    </ul>
+
+    <h2><a href="midias.html" target="_self" rel="next">Trabalhando com Mídias</a></h2>
+    <p>Página com exemplos de uso de mídias</p>
+
+    <h2><a href="css.html">Trabalhando com CSS</a></h2>
+    <p>Página com exemplos de uso da CSS</p>
+
+</body>
+</html>
