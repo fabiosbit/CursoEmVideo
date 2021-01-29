@@ -3,5 +3,6 @@
 
 Este é o meu primeiro repositório criado, seguindo o curso de Git e GitHub.
 
+Adicionando linha direto pelo GitHub.
 
 
