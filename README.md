@@ -1,0 +1,2 @@
+# CursoEmVideo
+ Exercícios dos cursos
