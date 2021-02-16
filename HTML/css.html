@@ -7,6 +7,17 @@
     
     <!--Aqui vamos definir todos os estilos desta página, dentro de <head>-->
     <style>
+        /* importanto do google: */
+        @import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap'); 
+
+        /* usando arquivos de fonte baixados e colocados na pasta fonts do projeto: */
+        @font-face {
+            font-family: 'nome da fonte';
+            src: url('fonts/fonte.otf') format('opentype'), url('fonts/fonte.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
         body
         {
             background-color: cadetblue;
@@ -16,6 +27,7 @@
 
         h1
         {
+            font-family: 'Reggae One', cursive;
             color: darkblue;
             background-color: lightblue;
         }
@@ -24,6 +36,7 @@
         {
             color: darkred;
         }
+
     </style>
 
 </head>
@@ -42,7 +55,18 @@
     <h2>Capítulo 2.2</h2>
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga, voluptatum. Veritatis, voluptatibus. Fugiat quae odit quibusdam accusamus excepturi, nisi inventore. Culpa nesciunt doloribus dicta! Deserunt eum aut optio alias cum.</p>
 
+    <h2>Trabalhando com Fontes</h2>
+    <p>Para tamanhos de fontes, utilize sempre as opções 'px' ou 'em', para páginas que serão exibidas em diversos dispositivos, utilize sempre 'em', que é uma porcentagem do tamanho padrão, 1em normalmente é igual a 16px.
+    </p>
+    <p>Escolha sempre uma família de fontes ex: "font-family: Arial, Helvetica, sans-serif;", assim o navegador tenta a primeira fonte (arial), se não tiver ele tenta (Helvica) e se ainda não tiver ele define uma automaticamente, podendo ser serifada ou não serifada (serifada possui aquela perninha nas letras) </p>
+    <p>É possível declarar todas as propriedades da fonte em uma única linha, seguindo a seguinte ordem: "font: font-style, font-weight, font-size, font-family </p>
+
+    <h2>Fontes Externas</h2>
+    <p>É sempre possível baixar novas fontes, mas também pode importar direto do google fonts, acesse o site <a href="https://fonts.google.com/" target="_blank" rel="external">fonts.google.com/</a> e copie o código CSS em @import.</p>
+    <p>Existe um plugin para o Chrome chamado 'Fonts Ninja', com ele é possível descobrir quais fontes estão sendo utilizadas em um site.</p>
+    
     <p><a href="css-externo.html" target="_self" rel="next">Página com CSS separado</a></p>
     <p><a href="index.html" target="_self" rel="prev">Voltar para página inicial.</a></p>
+
 </body>
 </html>
