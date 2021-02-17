@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Usando CSS</title>
     
-    <!--Aqui vamos definir todos os estilos desta página, dentro de <head>-->
+    <!--Aqui vamos definir todos os estilos desta página, dentro de <head>, mas o certo é criar um arquivo css separado-->
     <style>
         /* importanto do google: */
         @import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap'); 
@@ -30,16 +30,54 @@
             font-family: 'Reggae One', cursive;
             color: darkblue;
             background-color: lightblue;
+
         }
 
         h2
         {
+
             color: darkred;
+
+        }
+
+        div#fontes
+        {
+            background-color: rgb(212, 255, 251);
+            font-size: 16px;
+            padding: 10px;
+        }
+
+        div#fontes h2
+        {
+            color: black;
+        }
+
+        div#divs
+        {
+            width: 900px;
+            background-color: rgb(189, 215, 245);
+            margin: 50px auto 50px auto;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+            padding: 15px;
+            
         }
 
     </style>
 
 </head>
+
+<header id="cabecalho">
+<nav id="menu">
+<h1>Menu Principal</h1>
+<ul type="disc">
+    <li>Home</li>
+    <li>CSS</li>
+    <li>HTML</li>
+    <li>Pagina2</li>
+</ul>
+</nav>
+</header>
+
 <body>
     <h1>Trabalhando com CSS
         <p>Capítulo 1</p>
@@ -55,6 +93,7 @@
     <h2>Capítulo 2.2</h2>
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga, voluptatum. Veritatis, voluptatibus. Fugiat quae odit quibusdam accusamus excepturi, nisi inventore. Culpa nesciunt doloribus dicta! Deserunt eum aut optio alias cum.</p>
 
+    <div id="fontes">
     <h2>Trabalhando com Fontes</h2>
     <p>Para tamanhos de fontes, utilize sempre as opções 'px' ou 'em', para páginas que serão exibidas em diversos dispositivos, utilize sempre 'em', que é uma porcentagem do tamanho padrão, 1em normalmente é igual a 16px.
     </p>
@@ -64,6 +103,13 @@
     <h2>Fontes Externas</h2>
     <p>É sempre possível baixar novas fontes, mas também pode importar direto do google fonts, acesse o site <a href="https://fonts.google.com/" target="_blank" rel="external">fonts.google.com/</a> e copie o código CSS em @import.</p>
     <p>Existe um plugin para o Chrome chamado 'Fonts Ninja', com ele é possível descobrir quais fontes estão sendo utilizadas em um site.</p>
+    </div>
+
+    <div id="divs">
+        <h2>Formatando Divs</h2>
+        <p>Nesta Div, aplicamos as formatações de tamanho, alinhamento, centralização com margens e sombra</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor doloremque, provident et facilis quam perspiciatis quis reiciendis velit mollitia aliquid accusamus? Unde eveniet assumenda blanditiis reprehenderit nemo commodi, deserunt cum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et officia voluptatem cumque unde suscipit blanditiis exercitationem, numquam commodi dicta nihil ipsa autem tempore ad similique possimus! Eligendi dignissimos ipsam corporis?</p>
+    </div>
     
     <p><a href="css-externo.html" target="_self" rel="next">Página com CSS separado</a></p>
     <p><a href="index.html" target="_self" rel="prev">Voltar para página inicial.</a></p>
