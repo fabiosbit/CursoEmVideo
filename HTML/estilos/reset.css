@@ -1,0 +1,15 @@
+/* Este arquivo serve para resetar os padrões do browser e garantir que não tenha diferenças no site quando utilizar outros navegadores, é uma forma de compatibilidade cros-browser */
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body
+{
+    font-family: "Open Sans", sans-serif;
+}
+ul, ol, li
+{
+    list-style: none;
+}

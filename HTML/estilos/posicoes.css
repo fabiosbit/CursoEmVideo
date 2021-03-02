@@ -1,0 +1,121 @@
+/*Necessário para aceitar caracteres especiais, como assentos. */
+@charset "UTF-8";
+
+/* Exemplo inline */
+.inline
+{
+    color: #fff;
+    text-align: center;
+    background-color: black;
+}
+.inline-item
+{
+    display: inline;
+}
+.inline-item1
+{
+    background-color: chocolate;
+}
+.inline-item2
+{
+    background-color: darkgoldenrod;
+}
+.inline-item3
+{
+    background-color: darkolivegreen;
+}
+
+
+/* Exemplo block */
+.block
+{
+    color: #fff;
+    text-align: center;
+    background-color: black;
+}
+.block-item
+{
+    display: block;
+    width: 33.333%;
+    height: 150px;
+}
+.block-item1
+{
+    background-color: chocolate;
+}
+.block-item2
+{
+    background-color: darkgoldenrod;
+    margin-left: auto;
+}
+.block-item3
+{
+    background-color: darkolivegreen;
+    margin: auto;
+}
+
+
+
+/* Exemplo inline-block */
+.inlineblock
+{
+    color: #fff;
+    text-align: justify;
+    background-color: black;
+}
+.inlineblock-item
+{
+    display: inline-block;
+    width: 25%;
+    height: 150px;
+}
+.inlineblock-item1
+{
+    background-color: chocolate;
+}
+.inlineblock-item2
+{
+    background-color: darkgoldenrod;
+}
+.inlineblock-item3
+{
+    background-color: darkolivegreen;
+}
+.inlineblock::after /* opção :: adiciona um elemento no html via css */
+{
+    /* gambiarra para funcionar o text-align justify */
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+
+
+/* Position Relative e Static */
+.elementoRel
+{
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+}
+.elementoRel1
+{
+    background-color: blueviolet;
+    position: relative;
+}
+.elementoRel2
+{
+    background-color: brown;
+    position: relative;
+    bottom: 180px;
+    left: 10px;
+}
+.elementoRel_isActive
+{
+    z-index: 1;
+}
