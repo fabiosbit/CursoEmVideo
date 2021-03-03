@@ -132,6 +132,7 @@
     <p>Para usar o alinhamento justificado, é preciso adicionar uma linha a mais, pois a última linha nunca é justificada, e se só tiver uma linha, ela mesma é a última.</p>
 
     <h3>Propriedade Float</h3>
+    <p>Float foi originalmente feito para colocar imagens no meio de um texto, deixando o texto envolver uma imgame, e não para criar layouts.</p>
     <p>Quando é aplicado float em um elemento, ele ganha um novo layer, deixando um "buraco" no layer inicial, isso faz com que o conteúdo do layer 0 suba e ocupa o lugar do elemento que flutuou. O elemento pai que contem um elemento float, perde sua altura e largura, isso pode ser recuperado usando o overflow.</p>
     <p>O conteúdo que está dentro do elemento float nunca é escondido, se tiver um texto dentro de uma div que é float, esse texto será colocado logo abaixo ou ao lado do elemento, fazendo com que o texto sempre apareça na página. Isso quando algum outro elemento ocupar o espaço que o float deixou no layer 0. Os elementos se sobrepõe, mas o conteúdo não.</p>
     <p>Se eu quiser que o navegador considere os espaços deixados pelos floats no layer 0 e mantenha esses espaços ocupados para que o resto dos elementos não subam e ocupem esses espaços, posso utilizar a propriedade <strong>overflow: hidden;</strong> no elemento pai.</p>
@@ -143,6 +144,11 @@
     <p>A propriedade de posicionamento left, right, top e botton, tem seus valores referente ao tamanho da tela naquele momento, ou seja, se o navegador está com largura de 1000px, se eu colocar right: 50%; a borda de início do elemento irá se deslocar 500px.</p>
     <p>Para centralizar um elemento na tela, devo utilizar a propriedade right ou left 50% junto com a propriedade <strong>transform: translateX(-ou+50%) </strong>, isso move 50% da largura do elemento em vez da largura da tela.</p>
     <p>Um elemento filho absolut só irá respeitar o tamanho do elemento pai, se o pai não for static.</p>
+
+    <h3>Propriedade Flex</h3>
+    <p>Assim como o Float, o Flex não foi feito para criar layouts, e sim para criar colunas ou linhas dentro de um elemento pai. Crie um elemento pai com a propriedade flex e seus filhos se tornarão flex-itens e por padrão serão posicionanos um do lado do outro, criando uma coluna para cada elemento filho.</p>
+    <p>Use a propriedade flex-wrap para fazer quebra de linha quando os elementos não couberem na tela.</p>
+    <p>Use a propriedade flex-direction: columm; para criar linhas em vez de colunas.</p>
 
     <p><a href="index.html" target="_self" rel="prev">Voltar para página inicial.</a></p>
 
