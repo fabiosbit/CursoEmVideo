@@ -1,156 +1,237 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Usando CSS</title>
-    
+
     <!--Aqui vamos definir todos os estilos desta página, dentro de <head>, mas o certo é criar um arquivo css separado-->
     <style>
-        /* importanto do google: */
-        @import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap'); 
+      /* importanto do google: */
+      @import url("https://fonts.googleapis.com/css2?family=Reggae+One&display=swap");
 
-        /* usando arquivos de fonte baixados e colocados na pasta fonts do projeto: */
-        @font-face {
-            font-family: 'nome da fonte';
-            src: url('fonts/fonte.otf') format('opentype'), url('fonts/fonte.ttf') format('truetype');
-            font-weight: normal;
-            font-style: normal;
-        }
+      /* usando arquivos de fonte baixados e colocados na pasta fonts do projeto: */
+      @font-face {
+        font-family: "nome da fonte";
+        src: url("fonts/fonte.otf") format("opentype"), url("fonts/fonte.ttf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+      }
 
-        body
-        {
-            background-color: cadetblue;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 20px;
-        }
+      body {
+        background-color: cadetblue;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+      }
 
-        h1
-        {
-            font-family: 'Reggae One', cursive;
-            color: darkblue;
-            background-color: lightblue;
+      h1 {
+        font-family: "Reggae One", cursive;
+        color: darkblue;
+        background-color: lightblue;
+      }
 
-        }
+      h2 {
+        color: darkred;
+      }
 
-        h2
-        {
+      div#fontes {
+        background-color: rgb(212, 255, 251);
+        font-size: 16px;
+        padding: 10px;
+      }
 
-            color: darkred;
+      div#fontes h2 {
+        color: black;
+      }
 
-        }
-
-        div#fontes
-        {
-            background-color: rgb(212, 255, 251);
-            font-size: 16px;
-            padding: 10px;
-        }
-
-        div#fontes h2
-        {
-            color: black;
-        }
-
-        div#divs
-        {
-            width: 900px;
-            background-color: rgb(189, 215, 245);
-            margin: 50px auto 50px auto;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
-            padding: 15px;
-            
-        }
-
+      div#divs {
+        width: 900px;
+        background-color: rgb(189, 215, 245);
+        margin: 50px auto 50px auto;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        padding: 15px;
+      }
     </style>
+  </head>
 
-</head>
+  <header id="cabecalho">
+    <nav id="menu">
+      <h1>Menu Principal</h1>
+      <ul type="disc">
+        <li>Home</li>
+        <li>CSS</li>
+        <li>HTML</li>
+        <li>Pagina2</li>
+      </ul>
+    </nav>
+  </header>
 
-<header id="cabecalho">
-<nav id="menu">
-<h1>Menu Principal</h1>
-<ul type="disc">
-    <li>Home</li>
-    <li>CSS</li>
-    <li>HTML</li>
-    <li>Pagina2</li>
-</ul>
-</nav>
-</header>
-
-<body>
-    <h1>Trabalhando com CSS
-        <p>Capítulo 1</p>
+  <body>
+    <h1>
+      Trabalhando com CSS
+      <p>Capítulo 1</p>
     </h1>
     <h2>Capítulo 1.1</h2>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio expedita, voluptate adipisci natus reiciendis assumenda, minima vel dicta, commodi velit labore. Esse ipsam quia nostrum similique deleniti nesciunt repellendus nobis?</p>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio expedita, voluptate adipisci natus reiciendis assumenda, minima vel dicta, commodi
+      velit labore. Esse ipsam quia nostrum similique deleniti nesciunt repellendus nobis?
+    </p>
     <h2>Capítulo 1.2</h2>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit consequatur accusantium, nihil quia quam esse ducimus soluta, deserunt aut excepturi enim molestiae, vitae accusamus magni. Provident, voluptate? Molestias, et rerum.</p>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit consequatur accusantium, nihil quia quam esse ducimus soluta, deserunt aut excepturi
+      enim molestiae, vitae accusamus magni. Provident, voluptate? Molestias, et rerum.
+    </p>
     <h1>Capítulo 2</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam soluta accusamus, id vel in et saepe quaerat voluptas nobis distinctio similique aliquam? Numquam illum explicabo ab voluptatum autem, praesentium repudiandae.</p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam soluta accusamus, id vel in et saepe quaerat voluptas nobis distinctio similique aliquam?
+      Numquam illum explicabo ab voluptatum autem, praesentium repudiandae.
+    </p>
     <h2>Capítulo 2.1</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo culpa autem, voluptas repellendus sed velit corrupti, provident earum explicabo similique harum ipsum quasi aut nobis consequatur recusandae? Modi, distinctio possimus.</p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo culpa autem, voluptas repellendus sed velit corrupti, provident earum explicabo similique
+      harum ipsum quasi aut nobis consequatur recusandae? Modi, distinctio possimus.
+    </p>
     <h2>Capítulo 2.2</h2>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga, voluptatum. Veritatis, voluptatibus. Fugiat quae odit quibusdam accusamus excepturi, nisi inventore. Culpa nesciunt doloribus dicta! Deserunt eum aut optio alias cum.</p>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga, voluptatum. Veritatis, voluptatibus. Fugiat quae odit quibusdam accusamus excepturi, nisi
+      inventore. Culpa nesciunt doloribus dicta! Deserunt eum aut optio alias cum.
+    </p>
 
     <div id="fontes">
-    <h2>Trabalhando com Fontes</h2>
-    <p>Para tamanhos de fontes, utilize sempre as opções 'px' ou 'em', para páginas que serão exibidas em diversos dispositivos, utilize sempre 'em', que é uma porcentagem do tamanho padrão, 1em normalmente é igual a 16px.
-    </p>
-    <p>Escolha sempre uma família de fontes ex: "font-family: Arial, Helvetica, sans-serif;", assim o navegador tenta a primeira fonte (arial), se não tiver ele tenta (Helvica) e se ainda não tiver ele define uma automaticamente, podendo ser serifada ou não serifada (serifada possui aquela perninha nas letras) </p>
-    <p>É possível declarar todas as propriedades da fonte em uma única linha, seguindo a seguinte ordem: "font: font-style, font-weight, font-size, font-family </p>
+      <h2>Trabalhando com Fontes</h2>
+      <p>
+        Para tamanhos de fontes, utilize sempre as opções 'px' ou 'em', para páginas que serão exibidas em diversos dispositivos, utilize sempre 'em', que é uma
+        porcentagem do tamanho padrão, 1em normalmente é igual a 16px.
+      </p>
+      <p>
+        Escolha sempre uma família de fontes ex: "font-family: Arial, Helvetica, sans-serif;", assim o navegador tenta a primeira fonte (arial), se não tiver
+        ele tenta (Helvica) e se ainda não tiver ele define uma automaticamente, podendo ser serifada ou não serifada (serifada possui aquela perninha nas
+        letras)
+      </p>
+      <p>
+        É possível declarar todas as propriedades da fonte em uma única linha, seguindo a seguinte ordem: "font: font-style, font-weight, font-size, font-family
+      </p>
 
-    <h2>Fontes Externas</h2>
-    <p>É sempre possível baixar novas fontes, mas também pode importar direto do google fonts, acesse o site <a href="https://fonts.google.com/" target="_blank" rel="external">fonts.google.com/</a> e copie o código CSS em @import.</p>
-    <p>Existe um plugin para o Chrome chamado 'Fonts Ninja', com ele é possível descobrir quais fontes estão sendo utilizadas em um site.</p>
+      <h2>Fontes Externas</h2>
+      <p>
+        É sempre possível baixar novas fontes, mas também pode importar direto do google fonts, acesse o site
+        <a href="https://fonts.google.com/" target="_blank" rel="external">fonts.google.com/</a> e copie o código CSS em @import.
+      </p>
+      <p>Existe um plugin para o Chrome chamado 'Fonts Ninja', com ele é possível descobrir quais fontes estão sendo utilizadas em um site.</p>
     </div>
 
     <div id="divs">
-        <h2>Formatando Divs</h2>
-        <p>Nesta Div, aplicamos as formatações de tamanho, alinhamento, centralização com margens e sombra</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor doloremque, provident et facilis quam perspiciatis quis reiciendis velit mollitia aliquid accusamus? Unde eveniet assumenda blanditiis reprehenderit nemo commodi, deserunt cum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et officia voluptatem cumque unde suscipit blanditiis exercitationem, numquam commodi dicta nihil ipsa autem tempore ad similique possimus! Eligendi dignissimos ipsam corporis?</p>
+      <h2>Formatando Divs</h2>
+      <p>Nesta Div, aplicamos as formatações de tamanho, alinhamento, centralização com margens e sombra</p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor doloremque, provident et facilis quam perspiciatis quis reiciendis velit mollitia aliquid
+        accusamus? Unde eveniet assumenda blanditiis reprehenderit nemo commodi, deserunt cum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et
+        officia voluptatem cumque unde suscipit blanditiis exercitationem, numquam commodi dicta nihil ipsa autem tempore ad similique possimus! Eligendi
+        dignissimos ipsam corporis?
+      </p>
     </div>
-    
+
     <p><a href="css-externo.html" target="_self" rel="next">Página com CSS separado</a></p>
 
     <h2>Trabalhando com posicionamento em CSS</h2>
     <p>Página com os exemplos: <a href="posicoes.html">Posições</a></p>
-    
-    <h3>Propriedade Relative e Static: </h3>
-    <p>O position static é o comportamento padrão de uma div, o elemento fica estático na posição inicial e não se move. Já o position relative é a posição relativa a posição original de onde o elemento foi criado, a partir desta posição inicial, vale as propriedades top, right, left e botton, que dão a quantidade de espaço desejada em cada direção e também o z-index: 0 (padrão), que posiciona o elemento no eixo z, colocando ele na frente ou atrás de outros elementos..</p>
-    
+
+    <h3>Propriedade Relative e Static:</h3>
+    <p>
+      O position static é o comportamento padrão de uma div, o elemento fica estático na posição inicial e não se move. Já o position relative é a posição
+      relativa a posição original de onde o elemento foi criado, a partir desta posição inicial, vale as propriedades top, right, left e botton, que dão a
+      quantidade de espaço desejada em cada direção e também o z-index: 0 (padrão), que posiciona o elemento no eixo z, colocando ele na frente ou atrás de
+      outros elementos..
+    </p>
+
     <h3>Propriedade Display inline</h3>
-    <p>Exibe todos os elementos na mesma linha e não permite as alterações de tamanho heigh e widht e também adiciona um espaço entre cada elemento. O <strong>display: inline</strong> dá o comportamento de uma palavra para cada elemento da linha, é como fosse tudo uma linha de texto.</p>
-    <p>O comando text-align irá alinhar somente o texto e não o elemento inteiro, o elemento div, h1, p, etc, irá continuar ocupando o mesmo espaço e posição.</p>
+    <p>
+      Exibe todos os elementos na mesma linha e não permite as alterações de tamanho heigh e widht e também adiciona um espaço entre cada elemento. O
+      <strong>display: inline</strong> dá o comportamento de uma palavra para cada elemento da linha, é como fosse tudo uma linha de texto.
+    </p>
+    <p>
+      O comando text-align irá alinhar somente o texto e não o elemento inteiro, o elemento div, h1, p, etc, irá continuar ocupando o mesmo espaço e posição.
+    </p>
 
     <h3>Propriedade Display block</h3>
-    <p>Block é a propriedade padrão dos elementos, ele permite definir heigh e widht e ocupa toda a linha onde ele é inserido, sendo possível apenas colocar um block debaixo do outro.</p>
-    <p>Utilize a propriedade <strong>margin-left: auto</strong> para colcoar o elemento na esquerda, centro ou direita da página, a opção auto preenche toda a margem a direita ou esquerda, des de que uma largura tenha sido definida para o elemento.</p>
+    <p>
+      Block é a propriedade padrão dos elementos, ele permite definir heigh e widht e ocupa toda a linha onde ele é inserido, sendo possível apenas colocar um
+      block debaixo do outro.
+    </p>
+    <p>
+      Utilize a propriedade <strong>margin-left: auto</strong> para colcoar o elemento na esquerda, centro ou direita da página, a opção auto preenche toda a
+      margem a direita ou esquerda, des de que uma largura tenha sido definida para o elemento.
+    </p>
 
     <h3>Propriedade Display inline-block</h3>
-    <p>O inline-block junta as propriedades inline e block ao mesmo tempo, os elementos se comportarão como palavra e bloco, o text-align pode ser usado para alinhar o texto e/ou o elemento inteiro.</p>
-    <p>Para usar o alinhamento justificado, é preciso adicionar uma linha a mais, pois a última linha nunca é justificada, e se só tiver uma linha, ela mesma é a última.</p>
+    <p>
+      O inline-block junta as propriedades inline e block ao mesmo tempo, os elementos se comportarão como palavra e bloco, o text-align pode ser usado para
+      alinhar o texto e/ou o elemento inteiro.
+    </p>
+    <p>
+      Para usar o alinhamento justificado, é preciso adicionar uma linha a mais, pois a última linha nunca é justificada, e se só tiver uma linha, ela mesma é a
+      última.
+    </p>
 
     <h3>Propriedade Float</h3>
     <p>Float foi originalmente feito para colocar imagens no meio de um texto, deixando o texto envolver uma imgame, e não para criar layouts.</p>
-    <p>Quando é aplicado float em um elemento, ele ganha um novo layer, deixando um "buraco" no layer inicial, isso faz com que o conteúdo do layer 0 suba e ocupa o lugar do elemento que flutuou. O elemento pai que contem um elemento float, perde sua altura e largura, isso pode ser recuperado usando o overflow.</p>
-    <p>O conteúdo que está dentro do elemento float nunca é escondido, se tiver um texto dentro de uma div que é float, esse texto será colocado logo abaixo ou ao lado do elemento, fazendo com que o texto sempre apareça na página. Isso quando algum outro elemento ocupar o espaço que o float deixou no layer 0. Os elementos se sobrepõe, mas o conteúdo não.</p>
-    <p>Se eu quiser que o navegador considere os espaços deixados pelos floats no layer 0 e mantenha esses espaços ocupados para que o resto dos elementos não subam e ocupem esses espaços, posso utilizar a propriedade <strong>overflow: hidden;</strong> no elemento pai.</p>
-    <p>Se eu quiser que um conteúdo não ocupe o local de um elemento float, existe a propriedade <strong>clear: both; </strong> isso faz com que o conteúdo verifique se existe algum elemento flutuado a direita ou a esquerda, se tiver ele sai desse espaço e desce.</p>
+    <p>
+      Quando é aplicado float em um elemento, ele ganha um novo layer, deixando um "buraco" no layer inicial, isso faz com que o conteúdo do layer 0 suba e
+      ocupa o lugar do elemento que flutuou. O elemento pai que contem um elemento float, perde sua altura e largura, isso pode ser recuperado usando o
+      overflow.
+    </p>
+    <p>
+      O conteúdo que está dentro do elemento float nunca é escondido, se tiver um texto dentro de uma div que é float, esse texto será colocado logo abaixo ou
+      ao lado do elemento, fazendo com que o texto sempre apareça na página. Isso quando algum outro elemento ocupar o espaço que o float deixou no layer 0. Os
+      elementos se sobrepõe, mas o conteúdo não.
+    </p>
+    <p>
+      Se eu quiser que o navegador considere os espaços deixados pelos floats no layer 0 e mantenha esses espaços ocupados para que o resto dos elementos não
+      subam e ocupem esses espaços, posso utilizar a propriedade <strong>overflow: hidden;</strong> no elemento pai.
+    </p>
+    <p>
+      Se eu quiser que um conteúdo não ocupe o local de um elemento float, existe a propriedade <strong>clear: both; </strong> isso faz com que o conteúdo
+      verifique se existe algum elemento flutuado a direita ou a esquerda, se tiver ele sai desse espaço e desce.
+    </p>
 
     <h3>Propriedade position absolute</h3>
     <p>A posição padrão dos elementos é static, que não aceita alterações de posição.</p>
-    <p>O position absolute funciona da mesma forma que o float, ele cria um novo layer para aquele elemento, mas a referencia de posição é o tamanho da tela do navegador.</p>
-    <p>A propriedade de posicionamento left, right, top e botton, tem seus valores referente ao tamanho da tela naquele momento, ou seja, se o navegador está com largura de 1000px, se eu colocar right: 50%; a borda de início do elemento irá se deslocar 500px.</p>
-    <p>Para centralizar um elemento na tela, devo utilizar a propriedade right ou left 50% junto com a propriedade <strong>transform: translateX(-ou+50%) </strong>, isso move 50% da largura do elemento em vez da largura da tela.</p>
+    <p>
+      O position absolute funciona da mesma forma que o float, ele cria um novo layer para aquele elemento, mas a referencia de posição é o tamanho da tela do
+      navegador.
+    </p>
+    <p>
+      A propriedade de posicionamento left, right, top e botton, tem seus valores referente ao tamanho da tela naquele momento, ou seja, se o navegador está com
+      largura de 1000px, se eu colocar right: 50%; a borda de início do elemento irá se deslocar 500px.
+    </p>
+    <p>
+      Para centralizar um elemento na tela, devo utilizar a propriedade right ou left 50% junto com a propriedade
+      <strong>transform: translateX(-ou+50%) </strong>, isso move 50% da largura do elemento em vez da largura da tela.
+    </p>
     <p>Um elemento filho absolut só irá respeitar o tamanho do elemento pai, se o pai não for static.</p>
 
     <h3>Propriedade Flex</h3>
-    <p>Assim como o Float, o Flex não foi feito para criar layouts, e sim para criar colunas ou linhas dentro de um elemento pai. Crie um elemento pai com a propriedade flex e seus filhos se tornarão flex-itens e por padrão serão posicionanos um do lado do outro, criando uma coluna para cada elemento filho.</p>
+    <p>
+      Assim como o Float, o Flex não foi feito para criar layouts, e sim para criar colunas ou linhas dentro de um elemento pai. Crie um elemento pai com a
+      propriedade flex e seus filhos se tornarão flex-itens e por padrão serão posicionanos um do lado do outro, criando uma coluna para cada elemento filho.
+    </p>
     <p>Use a propriedade flex-wrap para fazer quebra de linha quando os elementos não couberem na tela.</p>
     <p>Use a propriedade flex-direction: columm; para criar linhas em vez de colunas.</p>
 
-    <p><a href="index.html" target="_self" rel="prev">Voltar para página inicial.</a></p>
+    <h3>Propriedade Display Grid</h3>
+    <p>Grid já foi criado para ser uma ferramenta de layout, com ele é possível criar linhas e colunas.</p>
 
-</body>
+    <h3>Propriedade Fixed</h3>
+    <p>Serve para fixar um elemento na tela, não sendo afetado pelo scroll. Normalmente usado para fixar um header, menus ou botões no site.</p>
+    <p>O fixed cria um novo layer para o elemento, assim como o float, deixando um buraco no layer padrão e ficando sobre os outros elementos.</p>
+    <p>Fixed também faz o elemento perder sua altura e largura, sendo necessário aplicar um widht 100% se quiser ocupar toda a linha da tela.</p>
+
+    <h3>Resumo</h3>
+    <p>
+      Geralmente se usará Grid e Flex para montar um layout, e a propriedade float para inserir figuras no meio de um texto. As outras propriedades absolute,
+      inline e block ainda funcionam, mas são mais difíceis de trabalhar e não tem mais necessedidade de usa-las.
+    </p>
+
+    <p><a href="index.html" target="_self" rel="prev">Voltar para página inicial.</a></p>
+  </body>
 </html>
