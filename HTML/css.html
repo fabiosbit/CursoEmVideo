@@ -218,19 +218,26 @@
     <p>Use a propriedade flex-wrap para fazer quebra de linha quando os elementos não couberem na tela.</p>
     <p>Use a propriedade flex-direction: columm; para criar linhas em vez de colunas.</p>
 
-    <h3>Propriedade Display Grid</h3>
-    <p>Grid já foi criado para ser uma ferramenta de layout, com ele é possível criar linhas e colunas.</p>
-
     <h3>Propriedade Fixed</h3>
     <p>Serve para fixar um elemento na tela, não sendo afetado pelo scroll. Normalmente usado para fixar um header, menus ou botões no site.</p>
     <p>O fixed cria um novo layer para o elemento, assim como o float, deixando um buraco no layer padrão e ficando sobre os outros elementos.</p>
     <p>Fixed também faz o elemento perder sua altura e largura, sendo necessário aplicar um widht 100% se quiser ocupar toda a linha da tela.</p>
 
+    <h3>Propriedade Position sticky</h3>
+    <p>Faz com que o elemento grude em algum ponto quando se faz o scroll da página.</p>
+
+    <h3>Propriedade Display Grid</h3>
+    <p>Grid já foi criado para ser uma ferramenta de layout, com ele é possível criar linhas e colunas. Seria o mais próximo do grid do WPF.</p>
+    <p>As propriedades justify-content e align-content alinham o grid em relação ao local onde o grid está inserido, alinha o grid em si. São raros os casos onde se usa.</p>
+    <p>As propriedades justify-itens e align-itens alinha as células do grid.</p>
+    <p>As propriedades justify-self e align-self também alinha as células, mas posso aplicar em um célula individual.</p>
+
+
     <h3>Resumo</h3>
     <p>
-      Geralmente se usará Grid e Flex para montar um layout, e a propriedade float para inserir figuras no meio de um texto. As outras propriedades absolute,
-      inline e block ainda funcionam, mas são mais difíceis de trabalhar e não tem mais necessedidade de usa-las.
+      Geralmente se usará Grid e Flex para montar um layout, e a propriedade float para inserir figuras no meio de um texto. As outras propriedades absolute, inline e block ainda funcionam, mas são mais difíceis de trabalhar e não tem mais necessedidade de usa-las.
     </p>
+    <p>Use grid quando tiver um numero fixo de colunas e linhas, e flex para quando tiver somente uma linha e com diversos elementos nele, ou que que a quantidade varie dentro dessa linha, assim não precisa ficar criando colunas.</p>
 
     <p><a href="index.html" target="_self" rel="prev">Voltar para página inicial.</a></p>
   </body>

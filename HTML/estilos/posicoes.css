@@ -1,6 +1,11 @@
 /*Necessário para aceitar caracteres especiais, como assentos. */
 @charset "UTF-8";
 
+body {
+	padding-top: 120px;
+	padding-bottom: 80px;
+}
+
 /*----------------*/
 /* Exemplo inline */
 /*----------------*/
@@ -226,7 +231,76 @@ article {
 	margin: 10px;
 }
 
-body {
-	padding-top: 120px;
-	padding-bottom: 80px;
+/*-----------------*/
+/* Position Sticky */
+/*-----------------*/
+
+.sticky {
+	position: sticky;
+	bottom: 0px; /* gruda no bottom do elemento pai */
+	width: 230px;
+	left: 50%;
+	transform: translateX(-50%);
+	color: #fff;
+	text-align: center;
+	background-color: black;
+	font-size: 20px;
+	padding: 10px;
+	border-radius: 15px;
+	margin: 10px;
+}
+
+/*--------------*/
+/* Display Grid */
+/*--------------*/
+
+.grid {
+	/* reset */
+	background-color: #7159c1;
+	color: black;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 24px;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/* reset */
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	grid-template-rows: 20vh 70vh 10vh;
+	grid-template-areas:
+		"header header"
+		"main aside"
+		"footer footer";
+}
+
+.grid-header {
+	background-color: yellow;
+	/* Substituido pelo template:
+	grid-column-start: 1;
+	grid-column-end: 3;
+	 */
+	grid-area: header;
+	line-height: 20vh;
+}
+
+.grid-main {
+	background-color: blue;
+	grid-area: main;
+	line-height: 70vh;
+}
+
+.grid-aside {
+	background-color: green;
+	grid-area: aside;
+	line-height: 70vh;
+}
+
+.grid-footer {
+	background-color: red;
+	grid-area: footer;
+	line-height: 10vh;
 }
